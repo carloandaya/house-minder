@@ -1,0 +1,4 @@
+include house-minder/schema.sql
+graft house-minder/static
+graft house-minder/templates
+global-exclude *.pyc
