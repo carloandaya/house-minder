@@ -1,4 +1,6 @@
+include LICENSE
 include house-minder/schema.sql
 graft house-minder/static
 graft house-minder/templates
+graft tests
 global-exclude *.pyc
