@@ -30,6 +30,5 @@ def create_app(test_config=None):
     with app.app_context(): 
         from . import auth
         app.register_blueprint(auth.bp)
-        app.add_url_rule('/', endpoint='hello')
 
     return app

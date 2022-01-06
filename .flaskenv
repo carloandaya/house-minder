@@ -1,2 +1,2 @@
-FLASK_APP=house-minder
+FLASK_APP=houseminder
 FLASK_ENV=development
