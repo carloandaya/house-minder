@@ -12,7 +12,7 @@ class User(UserMixin):
     @staticmethod
     def get(user_id):
         db = get_db()
-        mongo_user = db.users.find_one({"id": user_id})
+        mongo_user = db.houseminder.users.find_one({"id": user_id})
         if not mongo_user:
             return None
 
@@ -31,5 +31,5 @@ class User(UserMixin):
                 "name": name,
                 "email": email,
                 "profile_pic": profile_pic}
-        db.users.insert_one(user)
+        db.houseminder.users.insert_one(user)
     
