@@ -1,5 +1,10 @@
 # house-minder
 
-Create a mongodb database and put credentials in config.py with the key MONGO_URI.
+These are the configuration values that need to be created in ./instance/config.py
+MONGO_URI
+GOOGLE_CLIENT_ID 
+GOOGLE_CLIENT_SECRET 
+GOOGLE_DISCOVERY_URL 
+
 
 Run with flask run --cert=adhoc on development
